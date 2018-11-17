@@ -31,7 +31,9 @@ export default {
 <style scoped>
 div {
   display:flex;
+  flex-wrap: wrap;
   max-width: 600px;
+  justify-content: space-between;
   align-items: baseline;
   margin-bottom: 12px;
   margin: 0 auto;
@@ -47,14 +49,24 @@ button {
   cursor: pointer;
   min-width: 36px;
   border-radius: 4pt;
-  margin-right: 12px;
 }
 
 input {
-  flex: 2 0 auto;
+  flex: 1 0 auto;
   font-size: 24pt;
   border:none;
   background-color: #ddd;
   margin-right: 12px;
+}
+
+@media (max-width: 533px) {
+  input {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  button {
+    width: 100%;
+    height: 48px;
+  }
 }
 </style>
