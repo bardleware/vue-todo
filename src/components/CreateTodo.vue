@@ -57,12 +57,15 @@ input {
   border:none;
   background-color: #ddd;
   margin-right: 12px;
+  padding: 4px;
+  box-sizing: border-box;
 }
 
-@media (max-width: 533px) {
+@media (max-width: 568px) {
   input {
-    width: 100%;
+    width: 300px;
     margin-bottom: 12px;
+    margin-right: 0px;
   }
   button {
     width: 100%;
